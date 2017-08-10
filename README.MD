@@ -1,9 +1,31 @@
 # react-native-single-image-zoom-viewer
 
-# use
+## Getting Start
 
-## install
+### install
+> npm i react-native-single-image-zoom-viewer --save
 
+### import & use
+```javaScript
+// import
+import SingleImageZoomViewer from 'react-native-single-image-zoom-viewer'
+
+// use in any component
+// use remote image from uri
+<SingleImageZoomViewer source={{uri:'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1972890221,1494503013&fm=26&gp=0.jpg'}}/>
+
+// use local image,
+<SingleImageZoomViewer source={require('./example-image.png')} width={200} height={{200}}/>
+```
+
+#### props
+
+|props|type|needed|detail|default|
+|:---|:---|:---|:---|:---|
+|source|RN Image Source|yes|use `{uri:uri}` or `require('local uri')` like use React Native Image|none|
+|width|Number|no|if the source is `{uri:uri}`,it will auto set,if not it is default to be 200,or your setting| see detail|
+|height|Number|same as width|same as width||
+|more is coming|
 
 
 ## Problem may occur

@@ -13,7 +13,8 @@ import {
   Image
 } from 'react-native';
 
-import SingleImageZoomViewer from './SingleImageZoomViewer'
+// import SingleImageZoomViewer from './SingleImageZoomViewer'
+import SingleImageZoomViewer from 'react-native-single-image-zoom-viewer'
 
 let remoteSource = {uri:'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1972890221,1494503013&fm=26&gp=0.jpg'},
     localSource = require('./example-image.png'),
