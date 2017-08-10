@@ -35,7 +35,6 @@ class SingleImageZoomViewer extends React.Component{
 			top,
 			left,
 			scale
-		console.log(width)
 		if (rateImage > rateWindow) {
 			scale = width/_width
 		} else {
@@ -57,13 +56,12 @@ class SingleImageZoomViewer extends React.Component{
 	componentWillMount(){
 		// different image source deal in different way
 		if (this.props.source.uri === undefined) {
-
+			this.center(this.props.width || 200, this.props.height || 200)
 		} else {
 			Image.getSize(this.props.source, (width, height)=>{
-				console.log(width, height)
 				this.center(width,height)
 			}, (error) => {
-				console.log(error)
+				console.error(error)
 			})
 		}
 		// gesture handler
@@ -81,7 +79,6 @@ class SingleImageZoomViewer extends React.Component{
 
 			// touche start
 			onPanResponderGrant:(evt, gestureState) => {
-				console.log(evt.nativeEvent.touches)
 				// mark touches info
 				for (let x in this._touches) {
 					if (evt.nativeEvent.touches[x]) {
@@ -90,7 +87,6 @@ class SingleImageZoomViewer extends React.Component{
 						this._touches[x].identifier = evt.nativeEvent.touches[x].identifier
 					}
 				}
-				console.log(this._touches)
 			},
 			onPanResponderMove: (evt, gestureState) => {
 				if (evt.nativeEvent.touches.length === 1) {
@@ -156,14 +152,23 @@ class SingleImageZoomViewer extends React.Component{
 						} else {
 							scaleAdd = this.state.scale * distanceScale
 						}
-						this.state.scale += scaleAdd
+						let setScale = this.state.scale + scaleAdd
 
 						// compute left & top for centering the zoom point
+						this.state.left = (setScale/this.state.scale) *
+								(0.5 * this.state.width + this.state.left - this._zoom.x) -
+								0.5 * this.state.width + this._zoom.x
+						this.state.top = (setScale/this.state.scale) *
+							(0.5 * this.state.height + this.state.top - this._zoom.y) -
+							0.5 * this.state.height + this._zoom.y
 
+						this.state.scale = setScale
 
 						this._zoom.distance = distanceTemp
 						this.setState({
-							scale: this.state.scale
+							scale: this.state.scale,
+							left:this.state.left,
+							top: this.state.top
 						})
 					}
 				}
@@ -181,7 +186,6 @@ class SingleImageZoomViewer extends React.Component{
 	}
 
 	render(){
-		console.log(this.state.scale)
 		return(
 			<View style={
 				{

@@ -15,34 +15,25 @@ import {
 
 import SingleImageZoomViewer from './SingleImageZoomViewer'
 
-let remoteSource = {uri:'http://developer.baidu.com/map/static/img/js_fn14.jpg'},
-  localSource = require('./example-image.png')
+let remoteSource = {uri:'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1972890221,1494503013&fm=26&gp=0.jpg'},
+    localSource = require('./example-image.png'),
+    optionRemote = {
+     source: remoteSource
+    },
+    optionLocal = {
+      source:localSource,
+      width: 200,
+      height: 200
+    }
+
 
 export default class ImageViewerExample extends Component {
   render() {
     return (
-      <SingleImageZoomViewer source={remoteSource}/>
+      <SingleImageZoomViewer {...optionRemote}/>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
 
 AppRegistry.registerComponent('ImageViewerExample', () => ImageViewerExample);
