@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="92dde3bf-569c-42a2-aae0-3fb9d06645b9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ImageViewerExample/index.ios.js" afterPath="$PROJECT_DIR$/ImageViewerExample/index.ios.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ImageViewerExample/package.json" afterPath="$PROJECT_DIR$/ImageViewerExample/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.MD" afterPath="$PROJECT_DIR$/README.MD" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -27,8 +24,8 @@
         <entry file="file://$PROJECT_DIR$/README.MD">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="135">
-                <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+              <first_editor relative-caret-position="75">
+                <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -279,12 +276,12 @@
       <workItem from="1502097749605" duration="6222000" />
       <workItem from="1502156855473" duration="4644000" />
       <workItem from="1502175195568" duration="1453000" />
-      <workItem from="1502262359375" duration="20740000" />
+      <workItem from="1502262359375" duration="21576000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33059000" />
+    <option name="totallyTimeSpent" value="33895000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -424,8 +421,8 @@
     <entry file="file://$PROJECT_DIR$/README.MD">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="135">
-            <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <first_editor relative-caret-position="75">
+            <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
             <folding />
           </first_editor>
           <second_editor>

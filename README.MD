@@ -1,5 +1,13 @@
 # react-native-single-image-zoom-viewer
 
+[![](https://img.shields.io/badge/Github-parsing-green.svg)](https://github.com/vincentmrlau/react-native-single-image-zoom-viewer)
+
+> move && zoom anywhere
+
+![](https://github.com/vincentmrlau/remote-image-store/blob/master/zoomer-move.gif?raw=true)
+
+![](https://github.com/vincentmrlau/remote-image-store/blob/master/zoomer-zoom.gif?raw=true)
+
 ## Getting Start
 
 ### install
