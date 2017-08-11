@@ -33,7 +33,7 @@ import SingleImageZoomViewer from 'react-native-single-image-zoom-viewer'
 |source|RN Image Source|yes|use `{uri:uri}` or `require('local uri')` like use React Native Image|none|
 |width|Number|no|if the source is `{uri:uri}`,it will auto set,if not it is default to be 200,or your setting| see detail|
 |height|Number|same as width|same as width||
-|more is coming|
+|style|Object|no|the container style object|`{flex:1,backgroundColor:'black'}`
 
 
 ## Problem may occur

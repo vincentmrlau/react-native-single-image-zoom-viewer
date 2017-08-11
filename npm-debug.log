@@ -1,0 +1,82 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'i',
+1 verbose cli   'react-native-single-image-zoom-viewer' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.3
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData react-native-single-image-zoom-viewer
+8 silly fetchNamedPackageData react-native-single-image-zoom-viewer
+9 silly mapToRegistry name react-native-single-image-zoom-viewer
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npm.taobao.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'react-native-single-image-zoom-viewer',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'react-native-single-image-zoom-viewer',
+12 silly mapToRegistry   name: 'react-native-single-image-zoom-viewer',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npm.taobao.org/react-native-single-image-zoom-viewer
+14 verbose request uri https://registry.npm.taobao.org/react-native-single-image-zoom-viewer
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 5:28:19 PM
+17 verbose request id 88933ff35773f022
+18 verbose etag "1a7f-vvzi/ogKTXUvb9UDb2NoJL1UEvA"
+19 http request GET https://registry.npm.taobao.org/react-native-single-image-zoom-viewer
+20 http 304 https://registry.npm.taobao.org/react-native-single-image-zoom-viewer
+21 verbose headers { date: 'Fri, 11 Aug 2017 09:28:19 GMT',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-current-requests': '1',
+21 verbose headers   etag: '"1a7f-vvzi/ogKTXUvb9UDb2NoJL1UEvA"',
+21 verbose headers   'x-readtime': '64' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Fri, 11 Aug 2017 09:28:19 GMT',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-current-requests': '1',
+22 silly get     etag: '"1a7f-vvzi/ogKTXUvb9UDb2NoJL1UEvA"',
+22 silly get     'x-readtime': '64' } ]
+23 verbose etag https://registry.npm.taobao.org/react-native-single-image-zoom-viewer from cache
+24 verbose get saving react-native-single-image-zoom-viewer to /Users/liuyiman/.npm/registry.npm.taobao.org/react-native-single-image-zoom-viewer/.cache.json
+25 verbose correctMkdir /Users/liuyiman/.npm correctMkdir not in flight; initializing
+26 silly install normalizeTree
+27 silly loadCurrentTree Finishing
+28 silly loadIdealTree Starting
+29 silly install loadIdealTree
+30 silly cloneCurrentTree Starting
+31 silly install cloneCurrentTreeToIdealTree
+32 silly cloneCurrentTree Finishing
+33 silly loadShrinkwrap Starting
+34 silly install loadShrinkwrap
+35 silly loadShrinkwrap Finishing
+36 silly loadAllDepsIntoIdealTree Starting
+37 silly install loadAllDepsIntoIdealTree
+38 silly rollbackFailedOptional Starting
+39 silly rollbackFailedOptional Finishing
+40 silly runTopLevelLifecycles Finishing
+41 silly install printInstalled
+42 verbose stack Error: Refusing to install react-native-single-image-zoom-viewer as a dependency of itself
+42 verbose stack     at checkSelf (/usr/local/lib/node_modules/npm/lib/install/validate-args.js:53:14)
+42 verbose stack     at Array.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+42 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+42 verbose stack     at chain (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+42 verbose stack     at /usr/local/lib/node_modules/npm/lib/install/validate-args.js:16:5
+42 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:35
+42 verbose stack     at Array.forEach (native)
+42 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:52:11
+42 verbose stack     at Array.forEach (native)
+42 verbose stack     at asyncMap (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:51:8)
+43 verbose cwd /Users/liuyiman/privatespace/react-native-single-image-zoom-viewer
+44 error Darwin 16.7.0
+45 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "i" "react-native-single-image-zoom-viewer"
+46 error node v6.10.3
+47 error npm  v3.10.10
+48 error code ENOSELF
+49 error Refusing to install react-native-single-image-zoom-viewer as a dependency of itself
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]

@@ -27,7 +27,11 @@ class SingleImageZoomViewer extends React.Component{
 		}
 		this.center = this.center.bind(this)
 	}
-
+	/*
+	* center and zoom to fit the window
+	* @ _width: the picture width
+	* @ _height: the picture height
+	* */
 	center(_width, _height){
 		let {width, height} = Dimensions.get('window'),
 			rateImage = _width/_height,
@@ -92,7 +96,6 @@ class SingleImageZoomViewer extends React.Component{
 				if (evt.nativeEvent.touches.length === 1) {
 					// one finger, moving
 					// reset zoom msg
-					this._zoomCenter = undefined
 					// todo possibly the lest finger is not the first touches,deal with it
 					if (this._touches[0].identifier === undefined) {
 						//haven marked before, mark and return
@@ -108,6 +111,13 @@ class SingleImageZoomViewer extends React.Component{
 						// compute the distance has touch moved
 						let moveX = evt.nativeEvent.touches[0].pageX - this._touches[0].x
 						let moveY = evt.nativeEvent.touches[0].pageY - this._touches[0].y
+						// set the state
+						this.state.left += moveX
+						this.state.top += moveY
+						this.setState({
+							left: this.state.left,
+							top: this.state.top
+						})
 						// mark
 						for (let x in this._touches) {
 							if (evt.nativeEvent.touches[x]) {
@@ -116,13 +126,6 @@ class SingleImageZoomViewer extends React.Component{
 								this._touches[x].identifier = evt.nativeEvent.touches[x].identifier
 							}
 						}
-						// set the state
-						this.state.left += moveX
-						this.state.top += moveY
-						this.setState({
-							left: this.state.left,
-							top: this.state.top
-						})
 					}
 				} else {
 					// compute the zoom center
@@ -180,8 +183,7 @@ class SingleImageZoomViewer extends React.Component{
 					{}
 				]
 				this._zoom = undefined
-			},
-
+			}
 		})
 	}
 
@@ -190,7 +192,8 @@ class SingleImageZoomViewer extends React.Component{
 			<View style={
 				{
 					flex: 1,
-					backgroundColor: 'black'
+					backgroundColor: 'black',
+					...this.props.style
 				}
 			}>
 				<Image
