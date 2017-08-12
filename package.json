@@ -1,6 +1,6 @@
 {
   "name": "react-native-single-image-zoom-viewer",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "an image viewer with zoom and move ",
   "main": "index.js",
   "scripts": {

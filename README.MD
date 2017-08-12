@@ -3,6 +3,13 @@
 [![](https://img.shields.io/badge/Github-parsing-green.svg)](https://github.com/vincentmrlau/react-native-single-image-zoom-viewer)
 [![](https://img.shields.io/badge/demo-parsing-orange.svg)](https://github.com/vincentmrlau/react-native-single-image-zoom-viewer-demo)
 
+### statistics
+|source|download|download/month|
+|:---|:---|:---|
+|npmjs.com|[![npm](https://img.shields.io/npm/dt/react-native-single-image-zoom-viewer.svg)](https://www.npmjs.com/package/react-native-single-image-zoom-viewer)|[![npm](https://img.shields.io/npm/dm/react-native-single-image-zoom-viewer.svg)](https://www.npmjs.com/package/react-native-single-image-zoom-viewer)
+|npm.taobao.org|[![npm.taobao](https://npm.taobao.org/badge/d/react-native-single-image-zoom-viewer.svg)](https://cnpmjs.org/package/react-native-single-image-zoom-viewer)|
+|cnpmjs.org|[![cnpm](https://cnpmjs.org/badge/d/react-native-single-image-zoom-viewer.svg)](https://cnpmjs.org/package/react-native-single-image-zoom-viewer)|
+
 
 > move && zoom anywhere
 
