@@ -5,9 +5,9 @@
 
 > move && zoom anywhere
 
-![](https://github.com/vincentmrlau/remote-image-store/blob/master/zoomer-move.gif?raw=true)
+![](https://raw.githubusercontent.com/vincentmrlau/remote-image-store/master/zoomer-move.gif)
 
-![](https://github.com/vincentmrlau/remote-image-store/blob/master/zoomer-zoom.gif?raw=true)
+![](https://raw.githubusercontent.com/vincentmrlau/remote-image-store/master/zoomer-zoom.gif)
 
 ## Getting Start
 
